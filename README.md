@@ -1,0 +1,2 @@
+# goetic_seals_generator
+goetic_seals_generator
