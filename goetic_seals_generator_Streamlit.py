@@ -324,6 +324,15 @@ def main():
     bg_color = st.sidebar.color_picker("Background Color", "#000000")
     line_color = st.sidebar.color_picker("Sigil Color", "#FFFFFF")
 
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("Support this Tool")
+    st.sidebar.markdown("If you find this generator useful, consider making a donation in cryptocurrency. Your support helps maintain and improve this project.")
+    st.sidebar.markdown("**Bitcoin (BTC):**")
+    st.sidebar.code("154P7GdFHBH2N5XuSauBhEbdGYSen8RkBT")
+    st.sidebar.markdown("**Dogecoin (DOGE):**")
+    st.sidebar.code("DFT2oi1gsWFKiqqDhPabTud9NN6M2EbzhY")
+
+
     # --- Main Area for Display ---
     if intent_text:
         lang_map = CONVERSION_MAPS[conversion_lang]
