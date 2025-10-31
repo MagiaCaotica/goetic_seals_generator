@@ -332,6 +332,16 @@ def main():
     st.sidebar.markdown("**Dogecoin (DOGE):**")
     st.sidebar.code("DFT2oi1gsWFKiqqDhPabTud9NN6M2EbzhY")
 
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("Or donate via PayPal:")
+    paypal_button_html = f"""
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=alekos200@yahoo.es&item_name=Donation+for+Magickal+Sigil+Generator&currency_code=EUR" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal button">
+    </a>
+    """
+    st.sidebar.markdown(paypal_button_html, unsafe_allow_html=True)
+
+
 
     # --- Main Area for Display ---
     if intent_text:
